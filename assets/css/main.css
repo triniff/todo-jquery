@@ -29,6 +29,14 @@ body{
 .tareas-agregadas h5{
 	color: #FAB915;
 }
-input{
-	clear: both;
-}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    opacity: 0;
+    content: '';
+    top: 0;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    z-index: 9999;
+    margin-top: 3px;
+ }
