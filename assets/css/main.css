@@ -18,3 +18,14 @@ body{
 .titulo i{
 	color: #FFF;
 }
+.tareas{
+	margin: 0 auto;
+	background-color: #EDEBF0;
+	padding: 40px;
+	margin-top: 40px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.2);
+}
+.tareas-agregadas h5{
+	color: #FAB915;
+}
