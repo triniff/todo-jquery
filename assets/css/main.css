@@ -29,3 +29,6 @@ body{
 .tareas-agregadas h5{
 	color: #FAB915;
 }
+input{
+	clear: both;
+}
