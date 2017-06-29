@@ -16,12 +16,17 @@ $(document).ready(function(){
 		if (tarea == "") {
 			alert("Tienes que agregar una tarea");
 		}else{
-			$(".tareas-agregadas").append('<div><input type="checkbox" class="check"/><label>'+ tarea +'</label> <button class="remove btn" > Eliminar </button> </div>'); //agregando elemento a la lista
+			var nuevaTarea = '<div><input type="checkbox" class="check"/><label>'+ tarea +'</label> <button class="remove btn" > Eliminar </button> </div>';
+			$(".tareas-agregadas").append(nuevaTarea); //agregando elemento a la lista
 			$("#tarea").val(""); //limpiando input
 		}
-		$(".remove").click(function(){
-			$(this).parent('div').remove();
+		$(".remove").click(function(){ //Eliminando tareas
+			$(this).parent("div").remove();
 		})
+		$( "input" ).click(function(){ //Cuando esta completada se pasa a la otra clase
+			var padre = $(this).parent("div");
+			$(".tareas-completadas").append(padre);			
+		} )
 	})
 	
 
