@@ -16,7 +16,7 @@ $(document).ready(function(){
 		if (tarea == "") {
 			alert("Tienes que agregar una tarea");
 		}else{
-			var nuevaTarea = '<div><input type="checkbox" class="check"/><label>'+ tarea +'</label> <button class="remove btn" > Eliminar </button> </div>';
+			var nuevaTarea = '<div><input type="checkbox" class="check"/><label>'+ tarea +'</label> <i class="fa fa-times remove" aria-hidden="true"></i></div>';
 			$(".tareas-agregadas").append(nuevaTarea); //agregando elemento a la lista
 			$("#tarea").val(""); //limpiando input
 		}

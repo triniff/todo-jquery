@@ -2,9 +2,11 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
 }
 .titulo{
-	background-color: #FAB915;
+	background-color: #fff;
 	padding: 40px;
 	display: flex;
 }
@@ -12,22 +14,22 @@ body{
 	margin: 0;
 	font-size: 30px;
 	font-weight: 900;
-	color: #FFF;
+	color: #e04040;
 	margin: 15px 0 0 20px;
 }
 .titulo i{
-	color: #FFF;
+	color: #e04040;
 }
 .tareas{
 	margin: 0 auto;
-	background-color: #EDEBF0;
+	background-color: #fff;
 	padding: 40px;
 	margin-top: 40px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.2);
 }
-.tareas-agregadas h5{
-	color: #FAB915;
+h5{
+	color: #e04040;
 }
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
     position: relative;
@@ -40,3 +42,12 @@ body{
     z-index: 9999;
     margin-top: 3px;
  }
+.tareas{
+	width: 50%;
+}
+.remove{
+	font-size: 25px;
+	position: absolute;
+	right: 30%;
+	color: #e04040;
+}
