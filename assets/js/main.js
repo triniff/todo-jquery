@@ -9,14 +9,16 @@ $(document).ready(function(){
 	        })
 	    })
 	}
+	
 	$("#tarea").enterKey(function (e) {
 		$(this).trigger("enterEvent");
 		e.preventDefault();
-    	var tarea = $("#tarea").val();
-		if (tarea == "") {
+		localStorage.tarea = document.getElementById("tarea").value;
+		console.log(localStorage.tarea);
+		if (localStorage.tarea == "") {
 			alert("Tienes que agregar una tarea");
 		}else{
-			var nuevaTarea = '<div><input type="checkbox" class="check"/><label>'+ tarea +'</label> <i class="fa fa-times remove" aria-hidden="true"></i></div>';
+			var nuevaTarea = '<div><input type="checkbox" class="check"/><label>'+ localStorage.tarea +'</label> <i class="fa fa-times remove" aria-hidden="true"></i></div>';
 			$(".tareas-agregadas").append(nuevaTarea); //agregando elemento a la lista
 			$("#tarea").val(""); //limpiando input
 		}
