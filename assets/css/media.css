@@ -1,0 +1,12 @@
+@media (max-width: 680px) and (min-width: 1px){
+	body{
+		background-image: url(../img/backgound-mobile.jpg);
+	}
+	.tareas{
+		padding: 25px;
+		width: 80%;
+	}
+	h5{
+		font-size: 20px;
+	}
+}
